@@ -169,9 +169,7 @@ Mientras se esta descargado con otra shell vamos hacer la siguiente busqueda.
 strings firefox.exe_210209_003234.dmp |grep admin@support.htb
 ```
 
-y con esto veremos password del admin@support.htb el es XXXXXXXXX
-actualizamos los archivo user: con admin@support.htb y el pass con XXXXXXXXX
-volvemos a probar con crackmapexec
+Y con esto veremos password del **admin@support.htb** actualizamos los archivo user.txt con **admin@support.htb** y el **pass.txt** con las password que encontramos volvemos a probar con `crackmapexec`
 ```
 crackmapexec smb 10.10.10.149 -u user -p pass
 ```
