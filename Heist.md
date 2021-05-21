@@ -131,16 +131,16 @@ Colocamos el hash en `hash_admin.txt` y utilizamos John otra vez
 ```
 john --format=Raw-SHA256 --wordlist=/usr/share/wordlists/rockyou.txt hash_admin.txt
 ```
-y Esto no funciono 🤷‍♂️
+y esto no funciono 🤷‍♂️
 
 Aqui solo puedo decir que despues de Mucho buscar en internet he intentar y intentar
 
-Volvi Heist con la session de Chase y me puse a buscar en los procesos
+Volvi **Heist** con la session de **Chase** y me puse a buscar en los procesos
 
 C:\Program Files> 
 Ejecutamos **Get-Process**
 
-Vi que Firefox se estaba ejecutando.
+Dentro de todos los proceso me llamo la antencion que **Firefox** se estaba ejecutando.
 
 |408|31|17404|63308|2.17|2768|1| firefox|
 |--|--|--|--|--|--|--|--|
