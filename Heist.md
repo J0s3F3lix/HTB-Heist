@@ -92,7 +92,7 @@ rpcclient $> lookupsids S-1-5-21-4254423774-1266059056-3197185112-1008
 Ahora tenemos el siguiente output
 S-1-5-21-4254423774-1266059056-3197185112-1008 SUPPORTDESK\Hazard (1)
 
-Con el SID podemos intentaremos listar los usuarios.
+Con el SID intentaremos listar los usuarios.
 ```
 rpcclient -U 'hazard%stealth1agent' 10.10.10.149 -c 'lookupsids S-1-5-21-4254423774-1266059056-3197185112-1000'
 ```
